@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="product">
+<!--
+	<cache size="1024" />
+-->
+	<select id="allProduct" resultType="nice">
+	   
+		select *
+       from product order by reg_date asc limit 8
+       
+	</select>
+	
+	<select id="hotProduct" resultType="nice">
+	   
+		select *
+       from product order by reg_date desc limit 8
+       
+	</select>
+	
+	<select id="recommendProduct1" resultType="nice">
+	   
+		select * from recommend_product where recommend_cate=1 order by sort asc;
+       
+	</select>
+	
+	<select id="recommendProduct2" resultType="nice">
+	   
+		select * from recommend_product where recommend_cate=2 order by sort asc;
+       
+	</select>
+	
+	<select id="recommendProduct3" resultType="nice">
+	   
+		select * from recommend_product where recommend_cate=3 order by sort asc;
+       
+	</select>
+	
+	<select id="recommendProduct4" resultType="nice">
+	   
+		select * from recommend_product where recommend_cate=4 order by sort asc;
+       
+	</select>
+	
+	<select id="recommendProduct5" resultType="nice">
+	   
+		select * from recommend_product where recommend_cate=5 order by sort asc;
+       
+	</select>
+	
+	<select id="recommendProduct6" resultType="nice">
+	   
+		select * from recommend_product where recommend_cate=6 order by sort asc;
+       
+	</select>
+	
+	<select id="recommendProduct7" resultType="nice">
+	   
+		select * from recommend_product where recommend_cate=7 order by sort asc;
+       
+	</select>
+	
+	<select id="allList" resultType="nice">
+	   
+		select * from product order by reg_date desc;
+       
+	</select>
+	
+	<select id="cartList" parameterType="String" resultType="nice">
+	    
+		select * from product where code = #{code};
+		
+	</select>
+	
+	<select id="detailInfo" parameterType="String" resultType="nice">
+	    
+		select * from product where code = #{code};
+		
+	</select>
+	
+	<select id="colorInfo" parameterType="String" resultType="nice">
+	    
+		select distinct(color) from inventory where code = #{code};
+		
+	</select>
+	
+	<select id="getOption" parameterType="nice" resultType="nice">
+	    
+		select size, amount from inventory where code = #{code} and color = #{color} order by size asc;
+		
+	</select>
+	
+</mapper>

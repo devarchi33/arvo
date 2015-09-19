@@ -1,0 +1,15 @@
+/.settings
+/.classpath
+/.project
+*.log
+*.epoch
+*.lck
+.idea/
+*.iml
+bower_components/
+node_modules/
+target/
+*.properties
+simple-spring-mybatis.ipr
+simple-spring-mybatis.iws
+.springBeans

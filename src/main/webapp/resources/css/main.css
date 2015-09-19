@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: "Nanum Gothic", sans-serif;
+}
+
+h3.glyphicon {
+	height: 20px;
+	font-size: 20px;
+}
+
+.container-fluid {
+	width: 1024px;
+	height: 1620px;
+	margin: 0 auto;
+}
+
+.last-frame {
+	margin-top: 20px;
+}
+
+iframe {
+	width: 200px;
+	height: 200px;
+}
+
+
+
+.col-xs-6 .col-md-12 ul a {
+	text-decoration:none;
+}
+
+.col-xs-6 .col-md-12 ul a .list-group-item:last-child {
+	border-bottom-right-radius : 0px;
+	border-bottom-left-radius : 0px;
+}
+
+.col-xs-6 .col-md-12 ul a .list-group-item:first-child {
+	border-top-left-radius : 0px;
+	border-top-right-radius : 0px;
+}
+
+.col-xs-6 .col-md-12 ul li {
+	border:none;
+	border-left:6px solid #EEE;
+}
+
+.col-xs-6 .col-md-12 ul li:hover {
+	border:none;
+	background-color:#EEE;
+	border-left:6px solid #FE5900;
+}
+
+.caption p a.btn-idx0 {
+	width:100%;
+}
+
+.jumbotron1 p.glyphicon-tag {
+	margin-bottom: 47px;
+}
+
+.caption p.btn-idx1-p {
+	margin:0px;
+	margin-top:30px;
+}
+
+.caption p a.btn-idx1 {
+	width:100%;
+}
+
+.caption p a.btn-idx2 {
+	width:100%;
+}
+
+.jumbotron2 p.glyphicon-tag {
+	margin-bottom: 52px;
+}
+
+.headline {
+	margin:0 auto;
+}
+
+.carousel-inner .item .top-logo {
+	margin-bottom:270px;
+	font-size:4.5em;
+}
+
+.carousel-inner .item .top-logo2 {
+	margin-bottom:170px;
+	font-size:3.2em;
+}
+
+.navbar-text {
+	margin:0 15px 0 15px;
+	color:white;
+	font-size:17px;
+}
+
+.navbar-text:hover {
+	color:#78A7CF;
+	text-decoration:none;
+}
